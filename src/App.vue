@@ -1,5 +1,10 @@
 <template>
-  <Leaderboard :users="users" />
+  <div>
+    <div class="logo">
+      <img src="./assets/Bertfinale.png" alt="Bertfinale" width="300">
+    </div>
+    <Leaderboard :users="users" />
+  </div>
 </template>
 
 <script>
@@ -27,5 +32,10 @@ export default {
 <style>
 body {
   background-color: rgb(7, 34, 79);
+}
+
+.logo {
+  margin-top: 2rem;
+  text-align: center;
 }
 </style>

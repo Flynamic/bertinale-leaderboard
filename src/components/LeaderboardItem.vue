@@ -1,9 +1,9 @@
 <template>
   <div class="leaderboard__item" :class="{ selected: selected }" @click="focus">
     <span class="leaderboard__rank">{{ delayedRank }}</span>
-    <span class="leaderboard__user">{{ user.name }}</span>
+    <span class="leaderboard__movie">{{ movie.name }}</span>
     <span class="leaderboard__score">
-      {{ user.score
+      {{ movie.score
       }}<input
         ref="newScore"
         v-model="newStep"
@@ -18,7 +18,7 @@
 export default {
   name: "LeaderboardItem",
   props: {
-    user: {
+    movie: {
       type: Object,
       required: true,
     },
@@ -64,7 +64,7 @@ export default {
           return;
         }
         this.$emit("step", {
-          userId: this.user.id,
+          movieId: this.movie.id,
           step: parseInt(this.newStep, 10),
         });
         this.newStep = "";
@@ -97,7 +97,7 @@ export default {
   width: 20px;
   display: inline-block;
 }
-.leaderboard__user {
+.leaderboard__movie {
   text-align: left;
   text-transform: uppercase;
   margin-left: 20px;

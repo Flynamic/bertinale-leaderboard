@@ -1,0 +1,110 @@
+[
+    {
+        "title": "South Park: Imaginationland",
+        "poster": "01_SouthPark.png"
+    },
+    {
+        "title": "Justice League: Snyder Cut",
+        "poster": "02_SnyderCut.png"
+    },
+    {
+        "title": "Uncut Gems",
+        "poster": "03_UncutGems.png"
+    },
+    {
+        "title": "Seven",
+        "poster": "04_Seven.png"
+    },
+    {
+        "title": "Spirited Away",
+        "poster": "05_SpiritedAway.png"
+    },
+    {
+        "title": "Tenet",
+        "poster": "06_Tenet.png"
+    },
+    {
+        "title": "Fight Club",
+        "poster": "07_FightClub.png"
+    },
+    {
+        "title": "Kill Bill 1&2",
+        "poster": "08_KillBill.png"
+    },
+    {
+        "title": "The Suicide Squad",
+        "poster": "09_TheSuicideSquad.png"
+    },
+    {
+        "title": "Reservoir Dogs",
+        "poster": "10_ReservoirDogs.png"
+    },
+    {
+        "title": "Shawshank Redemption",
+        "poster": "11_Shawshank.png"
+    },
+    {
+        "title": "Dune",
+        "poster": "12_Dune.png"
+    },
+    {
+        "title": "Bang Boom Bang",
+        "poster": "13_BangBoomBang.png"
+    },
+    {
+        "title": "Whiplash",
+        "poster": "14_Whiplash.png"
+    },
+    {
+        "title": "Blade Runner 2049",
+        "poster": "15_BladeRunner.png"
+    },
+    {
+        "title": "Death Proof",
+        "poster": "16_DeathProof.png"
+    },
+    {
+        "title": "Leon der Profi",
+        "poster": "17_LeonDerProfi.png"
+    },
+    {
+        "title": "Departed",
+        "poster": "18_Departed.png"
+    },
+    {
+        "title": "The Prestige",
+        "poster": "19_ThePrestige.png"
+    },
+    {
+        "title": "Coco Pixar",
+        "poster": "20_Coco.png"
+    },
+    {
+        "title": "Inglourious Basterds",
+        "poster": "21_IngloriousBasterds.png"
+    },
+    {
+        "title": "Last Night in Soho",
+        "poster": "22_LastNightInSoho.png"
+    },
+    {
+        "title": "American History X",
+        "poster": "23_AmericanHistoryX.png"
+    },
+    {
+        "title": "21",
+        "poster": "24_21.png"
+    },
+    {
+        "title": "Smokin Aces",
+        "poster": "25_SmokinAces.png"
+    },
+    {
+        "title": "The Other Guys",
+        "poster": "26_TheOtherGuys.png"
+    },
+    {
+        "title": "Scott Pilgrim vs. The World",
+        "poster": "27_ScottPilgrim.png"
+    }
+]

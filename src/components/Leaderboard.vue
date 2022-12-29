@@ -32,7 +32,7 @@
     <div class="poster" v-if="selected">
       <div class="poster-container" :style="{'opacity': posterVisible ? 1 : 0}">
         <div class="poster-image"
-             :style="{backgroundImage: 'url(' + require('../assets/poster/' + selected.poster) + ')'}"></div>
+             :style="{backgroundImage: `url(${poster})` }"></div>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
 
 <script>
 import LeaderboardItem from "./LeaderboardItem.vue";
-import Firework from "@/components/Firework";
+import Firework from "@/components/Firework.vue";
 
 export default {
   name: "Leaderboard",
@@ -56,14 +56,18 @@ export default {
       posterVisible: false,
       sweet16: false,
       winner: null,
+      poster: null,
     };
   },
   watch: {
     selected() {
       if (this.selected) {
-        setTimeout(() => {
-          this.posterVisible = true
-        }, 1000)
+        this.getPoster(this.selected).then(poster => {
+          this.poster = poster
+          setTimeout(() => {
+            this.posterVisible = true
+          }, 1000)
+        })
       } else {
         this.posterVisible = false
       }
@@ -90,6 +94,7 @@ export default {
         .then((res) => {
           console.log(res)
           this.movies = res.map((movie, index) => ({
+            ...movie,
             id: index,
             name: movie.title,
             poster: movie.poster,
@@ -126,6 +131,24 @@ export default {
     unselect() {
       this.selected = null;
     },
+    getAssetUrl (url) {
+      return new URL(url, import.meta.url).href
+    },
+    async getMovie(movie) {
+      const url = new URL('https://api.themoviedb.org/3/search/movie?api_key=64a015ee94412bef16ea9ef83bf3b8e8')
+      url.searchParams.append('query', movie.apiTitle || movie.title || movie.name)
+      url.searchParams.append('language', 'de-DE')
+      if (movie.year) {
+        url.searchParams.append('year', movie.year)
+      }
+      return await fetch(url.toString()).then(res => res.json()).then(data => data.results[0])
+    },
+    async getPoster(movie) {
+      console.log(movie)
+      const x = 'https://image.tmdb.org/t/p/w500/' + (await this.getMovie(movie)).poster_path
+      console.log(x)
+      return x
+    },
   },
   computed: {
     sortedMovies() {
@@ -145,17 +168,18 @@ export default {
 
 <style>
 @import url("https://fonts.cdnfonts.com/css/gotham");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 .leaderboard {
   border-radius: 0.5rem;
-  font-family: "Gotham";
+  font-family: monospace, serif;
   list-style: none;
   width: 80vw;
   max-width: 1000px;
   font-size: 20px;
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-rows: repeat(20, 1fr);
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 30px;
 }
@@ -171,7 +195,7 @@ export default {
 
 .leaderboard-container {
   display: flex;
-  font-family: "Gotham";
+  font-family: Audiowide;
   color: white;
   margin: 3rem auto 0;
   padding: 2rem;
@@ -180,7 +204,6 @@ export default {
 }
 
 .poster-container {
-  background-color: rgba(255, 255, 255, 1);
   padding: 10px;
   opacity: 0;
   transition: all 2s;

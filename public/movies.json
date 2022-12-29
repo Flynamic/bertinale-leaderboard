@@ -1,110 +1,121 @@
 [
     {
-        "title": "South Park: Imaginationland",
-        "poster": "01_SouthPark.png"
+        "title": "Jojo Rabbit",
+        "date": "2022-01-28"
     },
     {
-        "title": "Justice League: Snyder Cut",
-        "poster": "02_SnyderCut.png"
+        "title": "Parasite",
+        "date": "2022-02-04",
+        "year": 2019
     },
     {
-        "title": "Uncut Gems",
-        "poster": "03_UncutGems.png"
+        "title": "Green Book",
+        "date": "2022-03-04"
     },
     {
-        "title": "Seven",
-        "poster": "04_Seven.png"
+        "title": "The Revenant",
+        "date": "2022-03-11"
     },
     {
-        "title": "Spirited Away",
-        "poster": "05_SpiritedAway.png"
+        "title": "Movie 43",
+        "date": "2022-03-18"
     },
     {
-        "title": "Tenet",
-        "poster": "06_Tenet.png"
+        "title": "Donnie Darko",
+        "date": "2022-03-25"
     },
     {
-        "title": "Fight Club",
-        "poster": "07_FightClub.png"
+        "title": "The Rock: Fels der Entscheidung",
+        "date": "2022-04-01"
     },
     {
-        "title": "Kill Bill 1&2",
-        "poster": "08_KillBill.png"
+        "title": "Akira",
+        "date": "2022-04-08",
+        "year": 1991
     },
     {
-        "title": "The Suicide Squad",
-        "poster": "09_TheSuicideSquad.png"
+        "title": "American Psycho",
+        "date": "2022-04-22"
     },
     {
-        "title": "Reservoir Dogs",
-        "poster": "10_ReservoirDogs.png"
+        "title": "Shoplifters",
+        "date": "2022-04-29",
+        "year": 2018
     },
     {
-        "title": "Shawshank Redemption",
-        "poster": "11_Shawshank.png"
+        "title": "Arrival",
+        "date": "2022-05-06"
     },
     {
-        "title": "Dune",
-        "poster": "12_Dune.png"
+        "title": "Gran Torino",
+        "date": "2022-05-27"
     },
     {
-        "title": "Bang Boom Bang",
-        "poster": "13_BangBoomBang.png"
+        "title": "Praxis Dr Hasenbein",
+        "date": "2022-06-03"
     },
     {
-        "title": "Whiplash",
-        "poster": "14_Whiplash.png"
+        "title": "Memento",
+        "date": "2022-07-22"
     },
     {
-        "title": "Blade Runner 2049",
-        "poster": "15_BladeRunner.png"
+        "title": "Victoria",
+        "date": "2022-07-29",
+        "year": 2015
     },
     {
-        "title": "Death Proof",
-        "poster": "16_DeathProof.png"
+        "title": "Isle of Dogs",
+        "date": "2022-08-12"
     },
     {
-        "title": "Leon der Profi",
-        "poster": "17_LeonDerProfi.png"
+        "title": "Once Upon a Time in Hollywood"
     },
     {
-        "title": "Departed",
-        "poster": "18_Departed.png"
+        "title": "The Death of Stalin"
     },
     {
-        "title": "The Prestige",
-        "poster": "19_ThePrestige.png"
+        "title": "Waynes World"
     },
     {
-        "title": "Coco Pixar",
-        "poster": "20_Coco.png"
+        "title": "Lost in Translation",
+        "date": "2022-09-16"
     },
     {
-        "title": "Inglourious Basterds",
-        "poster": "21_IngloriousBasterds.png"
+        "title": "St. Vincent"
     },
     {
-        "title": "Last Night in Soho",
-        "poster": "22_LastNightInSoho.png"
+        "title": "Kiss the Cook",
+        "year": 2014
     },
     {
-        "title": "American History X",
-        "poster": "23_AmericanHistoryX.png"
+        "title": "Mac and Me",
+        "date": "2022-10-28"
     },
     {
-        "title": "21",
-        "poster": "24_21.png"
+        "title": "Spaceballs",
+        "date": "2022-11-04"
     },
     {
-        "title": "Smokin Aces",
-        "poster": "25_SmokinAces.png"
+        "title": "Palm Springs"
     },
     {
-        "title": "The Other Guys",
-        "poster": "26_TheOtherGuys.png"
+        "title": "Edge of Tomorrow"
     },
     {
-        "title": "Scott Pilgrim vs. The World",
-        "poster": "27_ScottPilgrim.png"
+        "title": "Die Gefährten",
+        "apiTitle": "Der Herr der Ringe: Die Gefährten"
+    },
+    {
+        "title": "Die zwei Türme"
+    },
+    {
+        "title": "Die Rückkehr des Königs",
+        "apiTitle": "Der Herr der Ringe: Die Rückkehr des Königs"},
+    {
+        "title": "Watchmen"
+    },
+    {
+        "title": "Die Ritter der Kokosnuss",
+        "date": "2022-12-30"
     }
 ]

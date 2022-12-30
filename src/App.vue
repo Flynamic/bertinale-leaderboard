@@ -1,5 +1,16 @@
 <template>
   <div>
+    <svg id=sun version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style="height: 0">
+      <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur id="glowfeGaussianBlur" stdDeviation="5.1" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
     <input type="checkbox" id="switch">
     <label for="switch" class="switch-label">Turn </label>
     <div class="container">
@@ -31,7 +42,6 @@ export default {
 <style>
 body {
   background-size: cover;
-  background: rgb(7, 34, 79) url("assets/bg.jpg") no-repeat center center;
 }
 
 .logo {
@@ -48,6 +58,13 @@ $screen-background: #121010;
 body {
   background: #111;
   color: white;
+  overflow: hidden;
+}
+
+.glow {
+  filter: url(#glow);
+  -webkit-filter: url(#glow);
+  -ms-filter: url(#glow);
 }
 
 #switch {
@@ -108,7 +125,7 @@ body {
 }
 
 .container {
-  background: rgb(7, 34, 79) url("assets/bg.jpg") no-repeat center center;
+  background: black;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -219,6 +236,8 @@ body {
 }
 
 .screen {
+  background: rgb(7, 34, 79) url("assets/bg.jpg") no-repeat center center;
+  background-size: cover;
   width: 100%;
   height: 100%;
   border: none;

@@ -3,14 +3,13 @@
     <span class="leaderboard__rank">{{ delayedRank }}</span>
     <span class="leaderboard__movie">{{ movie.name }}</span>
     <span class="leaderboard__score">
-      {{ movie.score }}
+      {{ Math.round(movie.score * 100) / 100 }}
     </span>
     <input
         ref="newScore"
         v-model="newStep"
         @keyup="typeScore"
-        v-show="inputShown"
-        style="position: fixed; right: 0; bottom: 0; opacity: 0.1"
+        style="width: 0; height: 0; opacity: 0"
     />
   </div>
 </template>
@@ -95,6 +94,7 @@ export default {
   color: white;
   padding: 10px;
   height: 25px;
+  cursor: default;
 }
 
 .leaderboard__item.selected {
